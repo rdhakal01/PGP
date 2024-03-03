@@ -268,7 +268,7 @@ console.log(markerElements);
 async function fetchData() {
   try {
    // const response = await fetch('FloridaHikes.csv');
- const response = await fetch('https://raw.githubusercontent.com/rdhakal01/PGP-CSV/main/FloridaHikes.csv?token=GHSAT0AAAAAACPAU4V5O7UXCTLUXXXAEGFQZPD2CNQ');
+ const response = await fetch('https://raw.githubusercontent.com/rdhakal01/PGP-CSV/main/FloridaHikes.csv?token=GHSAT0AAAAAACPAU4V5PPHI5VMIUXBNXMB4ZPD2UWA');
 
 
     const data = await response.text();

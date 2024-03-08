@@ -121,13 +121,13 @@ google.maps.event.addListener(map, 'click', () => {
 
 async function fetchData() {
   try {
-    const response = await fetch('FloridaHikes.csv');
-   const data = await response.text();
+   // const response = await fetch('FloridaHikes.csv');
+//   const data = await response.text();
 
-// const token = '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';  // Replace with your actual personal access token
-   // const url = `https://raw.githubusercontent.com/rdhakal01/PGP-CSV/main/FloridaHikes.csv?token=${token}`;
- // const response = await fetch(url);
-    // const data = await response.text();
+ const token = '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';  // Replace with your actual personal access token
+    const url = `https://raw.githubusercontent.com/rdhakal01/PGP-CSV/main/FloridaHikes.csv?token=${token}`;
+  const response = await fetch(url);
+     const data = await response.text();
 
     // Parse CSV data (use a library or implement your own parser)
     const parsedData = parseCSV(data);

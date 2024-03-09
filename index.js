@@ -125,7 +125,7 @@ async function fetchData() {
 //   const data = await response.text();
 
 
-    const url = `https://raw.githubusercontent.com/rdhakal01/PGP-CSV/main/FloridaHikes.csv?token=GHSAT0AAAAAACPAU4V57SAJ2U74LYYD2OVWZPKR3JA`;
+    const url = `https://storage.cloud.google.com/pgp-csv-bucket/FloridaHikes.csv`;
   const response = await fetch(url);
      const data = await response.text();
 
